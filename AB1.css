@@ -35,11 +35,17 @@ header {
     left: 400px;
 }
 
-li {
+.navbar li {
     margin: 29px;
     left: 800px;
     display: flex;
     text-align: right;
+}
+
+.navbar li a{
+    display: block;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar li:hover {
@@ -48,6 +54,24 @@ li {
     display: flex;
     border-radius: 2px;
     text-decoration: underline;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: -16px;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links {
+    height: 100%;
 }
 
 /* logo name */
@@ -70,17 +94,18 @@ li {
     top: 27px;
 }
 
-.logoname:hover{
+.logoname:hover {
     cursor: pointer;
 }
 
 /* Footer */
 .footer {
-     font-family: Georgia,
-     serif;
+    font-family: Georgia,
+        serif;
     background-color: #232006;
     display: flex;
     position: absolute;
+    overflow: hidden;
     width: 99%;
     height: 8%;
     top: 1940px;
@@ -88,6 +113,10 @@ li {
     justify-content: left;
 }
 
+.foot1{
+   margin: 20px;
+   display: inline;
+}
 .footer li:hover {
     color: #DA9B00;
     cursor: pointer;
@@ -115,5 +144,23 @@ li {
 
 .logsing:hover {
     cursor: pointer;
+}
 
+/* hand burger Toggle Button */
+.togglr-bar {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 43px;
+    height: 26px;
+}
+
+.togglr-bar .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
