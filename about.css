@@ -117,6 +117,7 @@ a:hover {
     #check:checked~ul {
         left: 0;
     }
+
 }
 
 /* About us and image image */
@@ -125,6 +126,7 @@ a:hover {
     width: 100%;
     height: 466px;
     top: -52px;
+    margin-left: -38px;
     align-items: center;
     justify-content: center;
 
@@ -132,7 +134,7 @@ a:hover {
 
 h1 {
     position: relative;
-    top: 76px;
+    top: 45px;
     margin-left: 50px;
     font-family: 'Slabo 27px',
         serif;
@@ -147,7 +149,7 @@ p1 {
 
 figure {
     margin: 0px;
-    padding: 0px 20px;
+    padding: 0px 100px;
     margin-top: 30px;
     position: relative;
     top: 20px;
@@ -161,20 +163,130 @@ figure {
     #img {
         width: 105%;
         margin: -28px -17px -94px 0px;
-        margin-left: -26px;
+        margin-left: -28px;
 
     }
 
     p1 {
         position: relative;
-        top: -50px;
+        top: -40px;
+        top: -40px;
         font-family: 'Noto Serif',
             serif;
     }
 
     h1 {
         position: relative;
-        top: 40px;
-        margin-left: 32px;
+        top: 66px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    figure {
+        padding: 0px 10px
     }
 }
+
+/* The Preferred Airline */
+dev h1 {
+    position: relative;
+    top: -83px;
+}
+
+p2 {
+    position: relative;
+    top: -40px;
+    font-family: 'Noto Serif',
+        serif;
+}
+
+@media (max-width: 952px) {
+    dev h1 {
+        position: relative;
+        top: 10px;
+    }
+
+    p2 {
+        position: relative;
+        top: 50px;
+    }
+}
+
+/* Great Place to Work */
+work h1 {
+    position: relative;
+    top: 18px;
+}
+
+p3 {
+    position: relative;
+    top: 50px;
+}
+
+@media (max-width: 952px) {
+    work h1 {
+        position: relative;
+        top: 85px;
+    }
+    p3 {
+        position: relative;
+        top: 129px;
+    }
+}
+
+ /* B.B Airline Reach */
+
+ reach h1{
+     position: relative;
+     top: 88px;
+ }
+  p4 {
+      position: relative;
+      top: 135px;
+  }
+
+ @media (max-width: 952px) {
+     reach h1 {
+         position: relative;
+         top: 165px;
+     }
+
+     p4{
+         position: relative;
+         top: 200px;
+     }
+ }
+
+
+ /* Footer */
+
+ nav1 {
+     background: #3b3605;
+     height: 80px;
+     width: 100%;
+ }
+
+ nav1 ul {
+     float: right;
+     margin-right: 20px;
+ }
+
+ nav1 ul li {
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+ }
+
+ nav1 ul li a {
+     color: white;
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+ }
+
+ a.active,
+ a:hover {
+     background: #eeb004;
+     transition: .5s;
+ }
