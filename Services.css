@@ -119,8 +119,99 @@ a:hover {
     }
 }
 
-section {
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin-left: -7px;
+        margin-right: 10px;
+    }
 }
+
+/* Services headings */
+
+h1 {
+    position: relative;
+    top: 66px;
+    margin-left: 34%;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Bodoni Moda',
+        serif;
+}
+
+dev h1 {
+    position: relative;
+    top: 49px;
+}
+
+@media (max-width: 952px) {
+    h1 {
+        margin-left: 0%;
+    }
+
+    dev h1 {
+        position: relative;
+        top: 2px;
+    }
+}
+
+@media (width: 1024px) {
+    dev h1 {
+        position: relative;
+        top: 49px;
+        left: -196px;
+    }
+}
+
+@media (width: 2307px) {
+    h1 {
+        margin-left: 25%;
+    }
+}
+
+/* Image (Service page) */
+.ser {
+    width: 36rem;
+    margin-top: 79px;
+    margin-left: 508px
+}
+
+@media (max-width: 991px) {
+    .ser {
+        margin-left: 301px;
+    }
+}
+
+@media (max-width: 952px) {
+    .ser {
+        width: 17rem;
+        margin-left: 46px;
+    }
+}
+
+@media (width: 1024px) {
+    .ser {
+        width: 29rem;
+        margin-left: 269px;
+    }
+}
+
+@media (width: 540px) {
+    .ser {
+            width: 29rem;
+            margin-left: 58px;
+    }
+}
+
+@media (width: 280px) {
+    .ser {
+       width: 18rem;
+       margin-top: 2px;
+       margin-left: 0px;
+    }
+    .logo {
+        font-size: 31px;
+    }
+}
+
