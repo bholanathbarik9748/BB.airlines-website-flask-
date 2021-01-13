@@ -135,3 +135,33 @@ section {
     display: flex;
     top: 50px;
 }
+
+/* Heading */
+h1{
+    margin-left: 0%;
+    text-align: center;
+    justify-content:center;
+    text-decoration: underline;
+    font-family: 'Noto Serif',
+    serif;
+}
+
+@media (min-width: 858px) {
+    h1 {
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+}
+
+figure {
+    margin: 0px;
+    padding: 0px 100px;
+    margin-top: 30px;
+    top: 20px;
+    text-decoration: solid black;
+    text-align: center;
+    font-family: 'Noto Serif',
+        serif;
+}
+
+

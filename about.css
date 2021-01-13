@@ -87,6 +87,10 @@ a:hover {
         display: block;
     }
 
+    figure h1 {
+        display: block;
+    }
+
     ul {
         position: fixed;
         width: 100%;
@@ -135,7 +139,7 @@ a:hover {
 h1 {
     position: relative;
     top: 45px;
-    margin-left: 50px;
+    margin-left: 0px;
     font-family: 'Slabo 27px',
         serif;
 }
@@ -151,7 +155,6 @@ figure {
     margin: 0px;
     padding: 0px 100px;
     margin-top: 30px;
-    position: relative;
     top: 20px;
     text-decoration: solid black;
     text-align: center;
@@ -168,7 +171,7 @@ figure {
     }
 
     p1 {
-        position: relative;
+
         top: -40px;
         top: -40px;
         font-family: 'Noto Serif',
@@ -176,7 +179,7 @@ figure {
     }
 
     h1 {
-        position: relative;
+
         top: 66px;
         margin-left: 0px;
         text-align: center;
@@ -189,12 +192,12 @@ figure {
 
 /* The Preferred Airline */
 dev h1 {
-    position: relative;
+
     top: -83px;
 }
 
 p2 {
-    position: relative;
+
     top: -40px;
     font-family: 'Noto Serif',
         serif;
@@ -202,35 +205,35 @@ p2 {
 
 @media (max-width: 952px) {
     dev h1 {
-        position: relative;
+
         top: 10px;
     }
 
     p2 {
-        position: relative;
+
         top: 50px;
     }
 }
 
 /* Great Place to Work */
 work h1 {
-    position: relative;
+
     top: 18px;
 }
 
 p3 {
-    position: relative;
+
     top: 50px;
 }
 
 @media (max-width: 952px) {
     work h1 {
-        position: relative;
+
         top: 85px;
     }
 
     p3 {
-        position: relative;
+
         top: 129px;
     }
 }
@@ -238,23 +241,23 @@ p3 {
 /* B.B Airline Reach */
 
 reach h1 {
-    position: relative;
+
     top: 88px;
 }
 
 p4 {
-    position: relative;
+
     top: 135px;
 }
 
 @media (max-width: 952px) {
     reach h1 {
-        position: relative;
+       
         top: 165px;
     }
 
     p4 {
-        position: relative;
+        
         top: 200px;
     }
 }
@@ -262,7 +265,6 @@ p4 {
 
 /* Footer */
 footer {
-    position: relative;
     bottom: 0;
 }
 
