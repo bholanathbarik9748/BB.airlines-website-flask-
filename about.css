@@ -252,15 +252,17 @@ p4 {
 
 @media (max-width: 952px) {
     reach h1 {
-       
+
         top: 165px;
     }
 
     p4 {
-        
+
         top: 200px;
     }
 }
+
+
 
 
 /* Footer */
