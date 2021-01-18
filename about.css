@@ -165,7 +165,7 @@ figure {
 @media (max-width: 952px) {
     #img {
         width: 105%;
-        margin: -28px -17px -94px 0px;
+        margin: 2px -17px -91px 12px;
         margin-left: -28px;
 
     }
@@ -183,6 +183,7 @@ figure {
         top: 66px;
         margin-left: 0px;
         text-align: center;
+        margin-top: 28px;
     }
 
     figure {
@@ -205,7 +206,7 @@ p2 {
 
 @media (max-width: 952px) {
     dev h1 {
-
+        margin-bottom: 46px;
         top: 10px;
     }
 
@@ -228,7 +229,8 @@ p3 {
 
 @media (max-width: 952px) {
     work h1 {
-
+        margin-bottom: 46px;
+        margin-bottom: 46px;
         top: 85px;
     }
 
@@ -241,7 +243,7 @@ p3 {
 /* B.B Airline Reach */
 
 reach h1 {
-
+    margin-top: -55px;
     top: 88px;
 }
 
@@ -252,7 +254,8 @@ p4 {
 
 @media (max-width: 952px) {
     reach h1 {
-
+        margin-top: -102px;
+        margin-bottom: 46px;
         top: 165px;
     }
 
@@ -278,7 +281,7 @@ footer {
     text-align: left;
     font: bold 16px sans-serif;
     padding: 55px 50px;
-    margin-top: 200px;
+    margin-top: 75px;
 }
 
 .footer-distributed .footer-left,

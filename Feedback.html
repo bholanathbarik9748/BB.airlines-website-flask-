@@ -46,40 +46,28 @@
         <h1>Feedback Section</h1>
     </figure>
     <!-- Feedback form -->
-    <form action="feedback.php" method="post">
+    <form>
         <div class="container">
-            <form class="de" action="action_page.php">
-
+            <form class="de">
                 <label class="feedbacktop" for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="fname" required placeholder="Your name..">
 
                 <label class="feedbacktop" for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="lname" required placeholder="Your last name..">
 
                 <label class="feedbacktop" for="lname">Email</label>
-                <input type="text" id="lname" name="email" placeholder="Enter your Email iD">
+                <input type="text" id="email" name="email" required placeholder="Enter your Email iD">
 
                 <label class="feedbacktop" for="country">Country</label>
-                <!-- <select id="country" name="country">
-                    <option value="usa">India</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="Switzerland.">Switzerland.</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Japan">Japan</option>
-                    <option value="Germany">Germany.</option>
-                    <option value="Australia">Australia.</option>
-                    <option value="Sweden">Sweden.</option>
-                </select> -->
-
                 <label class="feedbacktop" for="subject">Your Feedback</label>
-                <input id="subject" name="subject" placeholder="Write something.." style="height:200px"></>
-
+                <input type="text" id="subject" name="subject" required placeholder="Write something.."
+                    style="height:200px"></in>
                 <input type="submit" value="Submit">
-
             </form>
         </div>
     </form>
+
+
 
     <!-- Footer -->
     <footer class="footer-distributed">
