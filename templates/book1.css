@@ -10,7 +10,6 @@
 body {
     background-color: #d3b300;
     font-family: montserrat;
-    height: 2000px;
 }
 
 /* NavBar */
@@ -27,6 +26,10 @@ nav {
     line-height: 80px;
     padding: 0 1px;
     font-weight: bold;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 nav ul {
@@ -116,43 +119,13 @@ a:hover {
     }
 }
 
-/* Image slider */
-.carousel-item {
-    height: 70vh;
-    min-height: 300px;
-    position: static;
-    z-index: 1;
-    cursor: pointer;
-    opacity: 10px;
+figure {
     margin: 0px;
-}
-
-.carousel-indicators {
-    color: #ffd900;
-}
-
-.carousel-inner {
-    margin-top: 0px;
-}
-
-.carousel {
-    color: #3b3605;
-}
-
-h5 {
-    color: #f0eaba;
-    text-decoration: bold;
-    font-family: 'Coda Caption', sans-serif;
-}
-
-p {
-    color: #ffd900;
-    font-family: 'Merriweather', serif;
-}
-
-@media (max-width:965px) {
-    .carousel-item {
-        height: 0vh;
-        min-height: 199px;
-    }
+    padding: 0px 100px;
+    margin-top: 30px;
+    top: 20px;
+    text-decoration: solid black;
+    text-align: center;
+    font-family: 'Noto Serif',
+        serif;
 }

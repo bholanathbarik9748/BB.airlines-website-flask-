@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navbar</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const name = sessionStorage.getItem('From');
+            const surname = sessionStorage.getItem('To');
+
+            document.getElementById('result-name').innerHTML = name;
+            document.getElementById('result-surname').innerHTML = surname;
+
+        })
+    </script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label>
+            <span class="logo" style='color: rgb(217, 217, 223)'>B.</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>B </span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>A</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>i</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>r</span>
+            <span class="logo" style='color: rgb(201, 143, 18)'>L</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>i</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>n</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>e</span>
+            <span class="logo" style='color: rgb(217, 217, 223)'>s</span>
+        </label>
+        <ul>
+            <li><a href="my5th.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <h2>
+        Name: <span id="result-name" />
+    </h2>
+    <h2>
+        Surname: <span id="result-surname" />
+    </h2>
+</body>
+
+</html>

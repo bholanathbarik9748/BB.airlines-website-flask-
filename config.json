@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri": "mysql://root:@localhost/bb2",
+        "prod_uri": "mysql://root:@localhost/bb2",
+        "gmail-user":"bholanathbarik9748@gmail.com",
+        "gmail-password":"prrbbarik4@sr"
+    }
+}
