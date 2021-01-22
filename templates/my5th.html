@@ -16,7 +16,6 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
 </head>
 
 <body>
@@ -97,31 +96,41 @@
     </div>
     <!-- Book Airlines -->
     <div class="container">
-        <form action="">
+        <form action="book1.html">
             <h3>Book Your Flight</h3>
             <br>
             <label for="country">FROM</label>
-            <input type="text" id="lname" name="lastname" placeholder="From where">
-            <label for="country">TO</label> <input type="text" id="lname" name="lastname" placeholder="To where">
-            <label for="country">No. of<br>Travellers</label> <input type="text" id="lname" name="lastname"
-                placeholder="Adults(12+ year)">
-            <input type="text" id="lname" name="lastname" placeholder="Children(2-12 year)">
-            <input type="text" id="lname" name="lastname" placeholder="Infants(0-2 year)">
+            <input type="text" id="from" name="from" placeholder="From where" required>
+
+            <label for="country">TO</label>
+            <input type="text" id="to" name="to" placeholder="To where" required>
+
+            <label for="country">No. of<br>Travellers</label>
+            <input type="text" id="p1" name="p1" placeholder="Adults(12+ year)" required>
+            <input type="text" id="p2" name="p2" placeholder="Children(2-12 year)" required>
+            <input type="text" id="p3" name="p3" placeholder="Infants(0-2 year)" required>
             <label for="country">Class</label>
             <br>
-            <select id="country" name="country">
+
+            <select id="country" name="country" required>
                 <option value="australia">Economy</option>
                 <option value="canada">premium Economy</option>
                 <option value="usa">Business</option>
             </select>
             <br>
-            <label for="country">Date</label><br>
+            <label for="country" required>Date</label><br>
             <input type="date">
             <br>
             <br>
-            <input type="submit" value="search flight &#x21e2;">
+            <input type="submit" value="search flight &#x21e2;" onclick="search();">
         </form>
     </div>
+    <!-- into video -->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Our Into Video
+    </video>
 </body>
 <!-- Footer -->
 <footer class="footer-distributed">
@@ -173,7 +182,6 @@
             B.B Airlines is a Airlines for travel, transportation platform.
         </p>
         <div class="footer-icons">
-
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -182,6 +190,19 @@
     </div>
 </footer>
 
+<!-- JavaScript -->
+<script>
+    function search() {
+        const from = document.getElementById("from").value;
+        const to = document.getElementById("to").value;
+
+        localStorage.setItem("from", from);
+        localStorage.setItem("to", to);
+        return;
+    }
+</script>
+
+<!-- Css -->
 <style>
     * {
         padding: 0;
@@ -596,7 +617,7 @@
         }
     }
 
-    /* End */
+
 
     /* Important */
     @media (max-width: 858px) {
@@ -606,6 +627,31 @@
             margin-right: 10px;
         }
     }
+
+    /* Into video */
+
+    video {
+        justify-items: center;
+        margin-left: 128px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        width: 85%;
+        height: 30%;
+
+    }
+
+    @media (max-width: 952px) {
+        video {
+            justify-items: center;
+            margin-left: 14px;
+            margin-top: 25px;
+            margin-bottom: -97px;
+            width: 94%;
+            height: 11%;
+        }
+    }
+
+    /* End */
 </style>
 
 </html>

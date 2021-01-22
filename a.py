@@ -61,8 +61,13 @@ def Services():
 
 
 @app.route("/Contact.html")
-def Contact():
+def from1():
     return render_template('Contact.html')
+
+
+@app.route("/book1.html")
+def Contact():
+    return render_template('book1.html')
 
 
 @app.route("/Feedback.html", methods=['GET', 'POST'])

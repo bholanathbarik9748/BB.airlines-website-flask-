@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -128,4 +129,9 @@ figure {
     text-align: center;
     font-family: 'Noto Serif',
         serif;
+}
+
+/* navigation */
+span {
+    width: 100%;
 }

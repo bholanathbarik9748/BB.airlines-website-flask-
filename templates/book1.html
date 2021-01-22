@@ -10,16 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="book1.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-            const name = sessionStorage.getItem('From');
-            const surname = sessionStorage.getItem('To');
-
-            document.getElementById('result-name').innerHTML = name;
-            document.getElementById('result-surname').innerHTML = surname;
-
-        })
-    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,12 +40,20 @@
             <li><a href="Feedback.html">Feedback</a></li>
         </ul>
     </nav>
-    <h2>
-        Name: <span id="result-name" />
-    </h2>
-    <h2>
-        Surname: <span id="result-surname" />
-    </h2>
+    <figure>
+        <h2>
+            From &#8594; <span id="result-name" />
+        </h2>
+        <h2>
+            To &#8594; <span id="result-surname" />
+        </h2>
+    </figure>
+
+    <!-- Javascript -->
+    <script>
+        document.getElementById("result-name").innerHTML = localStorage.getItem("from");
+        document.getElementById("result-surname").innerHTML = localStorage.getItem("to");
+    </script>
 </body>
 
 </html>
