@@ -41,19 +41,55 @@
         </ul>
     </nav>
     <figure>
-        <h2>
-            From &#8594; <span id="result-name" />
-        </h2>
-        <h2>
-            To &#8594; <span id="result-surname" />
-        </h2>
+        <dd class="status">
+            <h2>
+                From &#8594; <span id="result-name" />
+            </h2>
+            <h2>
+                To &#8594; <span id="result-surname" />
+            </h2>
+            <h2>
+                Date&#8594;<span id="Date" />
+            </h2>
+            <div class="total">
+                <p class="total" id="one"></p>
+                <br><br><br>
+                <h6 class="total">per person</h6>
+                <button class="total" onclick="random()">click to show cost</button>
+            </div>
+        </dd>
     </figure>
+    <div class="pasenger">
+        <h2>
+            Adults &#x21d2;<span id="p1" />
+        </h2>
+        <h2>
+            Children &#x21d2;<span #eeb004 id="p2" />
+        </h2>
+        <h2>
+            Infants &#x21d2;<span id="p3" />
+        </h2>
+
+    </div>
+    </div>
+
+
 
     <!-- Javascript -->
     <script>
         document.getElementById("result-name").innerHTML = localStorage.getItem("from");
         document.getElementById("result-surname").innerHTML = localStorage.getItem("to");
+        document.getElementById("Date").innerHTML = localStorage.getItem("date");
+        document.getElementById("p1").innerHTML = localStorage.getItem("p1");
+        document.getElementById("p2").innerHTML = localStorage.getItem("p2");
+        document.getElementById("p3").innerHTML = localStorage.getItem("p3");
+
+        function random() {
+            document.getElementById("one").innerHTML = Math.floor(Math.random() * (10000 - 7000) + 7000);
+        }
     </script>
+
+
 </body>
 
 </html>

@@ -119,7 +119,7 @@
             </select>
             <br>
             <label for="country" required>Date</label><br>
-            <input type="date">
+            <input id="date" name="date" type="date">
             <br>
             <br>
             <input type="submit" value="search flight &#x21e2;" onclick="search();">
@@ -195,9 +195,18 @@
     function search() {
         const from = document.getElementById("from").value;
         const to = document.getElementById("to").value;
+        const date = document.getElementById("date").value;
+        const p1 = document.getElementById("p1").value;
+        const p2 = document.getElementById("p2").value;
+        const p3 = document.getElementById("p3").value;
 
         localStorage.setItem("from", from);
         localStorage.setItem("to", to);
+        localStorage.setItem("date", date);
+        localStorage.setItem("p1", p1);
+        localStorage.setItem("p2", p2);
+        localStorage.setItem("p3", p3);
+
         return;
     }
 </script>
@@ -632,12 +641,11 @@
 
     video {
         justify-items: center;
-        margin-left: 128px;
+        margin-left: 97px;
         margin-top: 25px;
         margin-bottom: 10px;
-        width: 85%;
+        width: 87%;
         height: 30%;
-
     }
 
     @media (max-width: 952px) {
