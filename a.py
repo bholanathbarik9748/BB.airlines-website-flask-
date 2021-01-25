@@ -90,5 +90,15 @@ def feedback():
     return render_template('Feedback.html', params=params)
 
 
+@app.route("/booktag.html")
+def booktag():
+    return render_template('booktag.html')
+
+
+@app.route("/complit.html")
+def complit():
+    return render_template('/complit.html')
+
+
 if __name__ == '__main__':
     app.run()
